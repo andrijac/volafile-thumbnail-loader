@@ -1,6 +1,7 @@
 /*global console, document */
 /*jslint plusplus: true */
-(function () {
+/*jslint white: true */
+(function (document) {
 	'use strict';
 
 	function insertAfter(referenceNode, newNode) {
@@ -42,7 +43,7 @@
 
 		elements = document.getElementsByClassName('file_name');
 
-		for (i = 0, ii = elements.length; i < elements.length; i++) {
+		for (i = 0, ii = elements.length; i < ii; i++) {
 
 			href = elements[i].href;
 			link = getLink(href);
@@ -60,4 +61,4 @@
 		}
 	}());
 
-}());
+}(document));
